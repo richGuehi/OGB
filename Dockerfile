@@ -1,4 +1,4 @@
-FROM php:8.2-apache
+FROM php:8.4-apache
 
 # 1. Installation des outils de base (PHP, Zip, et Node.js pour compiler le design)
 RUN apt-get update && apt-get install -y \
