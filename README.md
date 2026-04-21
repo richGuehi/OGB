@@ -1,58 +1,221 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+````markdown
+# 🚀 OGB — Ouattara Group Business
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+![Laravel](https://img.shields.io/badge/Laravel-v12-red?style=for-the-badge&logo=laravel)
+![PHP](https://img.shields.io/badge/PHP-8.4-blue?style=for-the-badge&logo=php)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Modern-06B6D4?style=for-the-badge&logo=tailwindcss)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?style=for-the-badge&logo=docker)
+![Status](https://img.shields.io/badge/Status-Production-success?style=for-the-badge)
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# 🌍 Présentation
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+**OGB (Ouattara Group Business)** est le site vitrine officiel d’une entreprise multisectorielle basée en **Côte d’Ivoire**, active dans plusieurs domaines :
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- 🏗️ Bâtiment & Travaux Publics (BTP)
+- 💻 Informatique & Solutions digitales
+- 🤝 Partenariats stratégiques
+- 🏢 Gestion de projets & accompagnement
 
-## Learning Laravel
+Ce site a été conçu pour valoriser l’image de marque de l’entreprise, présenter ses activités et faciliter la prise de contact avec ses futurs clients et partenaires.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# ✨ Fonctionnalités principales
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+## 🏠 Site vitrine moderne
+Une interface professionnelle, rapide et responsive.
 
-## Agentic Development
+## 🏢 Présentation des services
+Mise en avant des pôles d’activités de l’entreprise.
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+## 📸 Galerie médias
+Photos et contenus visuels des réalisations.
+
+## 👨‍💼 Équipe dirigeante
+Présentation dynamique des responsables.
+
+## 📩 Formulaire de contact
+Envoi direct de messages à l’administration.
+
+## ⚡ Performance optimisée
+Chargement rapide grâce à Laravel + Vite.
+
+---
+
+# 🛠️ Stack Technique
+
+| Technologie | Utilisation |
+|----------|-------------|
+| Laravel 12 | Backend PHP |
+| PHP 8.4 | Langage principal |
+| Blade | Templates |
+| Tailwind CSS | Design UI |
+| Alpine.js | Interactions dynamiques |
+| Vite | Build frontend |
+| SQLite | Base de données |
+| Docker / Sail | Environnement local |
+| Render | Déploiement |
+
+---
+
+# 📂 Structure du projet
 
 ```bash
-composer require laravel/boost --dev
+app/
+resources/
+routes/
+database/
+public/
+docker/
+README.md
+````
 
-php artisan boost:install
+---
+
+# ⚙️ Installation locale
+
+## 1️⃣ Cloner le projet
+
+```bash
+git clone https://github.com/richGuehi/OGB.git
+cd OGB
 ```
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+---
 
-## Contributing
+## 2️⃣ Copier le fichier d’environnement
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+```bash
+cp .env.example .env
+```
 
-## Code of Conduct
+---
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 3️⃣ Installer les dépendances PHP
 
-## Security Vulnerabilities
+```bash
+docker run --rm \
+-u "$(id -u):$(id -g)" \
+-v "$(pwd):/var/www/html" \
+-w /var/www/html \
+laravelsail/php84-composer:latest \
+composer install --ignore-platform-reqs
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
+## 4️⃣ Lancer Docker Sail
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+./vendor/bin/sail up -d
+```
+
+---
+
+## 5️⃣ Générer la clé Laravel
+
+```bash
+./vendor/bin/sail artisan key:generate
+```
+
+---
+
+## 6️⃣ Installer le Frontend
+
+```bash
+./vendor/bin/sail npm install
+./vendor/bin/sail npm run dev
+```
+
+---
+
+# 🌐 Accès local
+
+| Service         | URL                                            |
+| --------------- | ---------------------------------------------- |
+| Site Web        | [http://localhost](http://localhost)           |
+| Vite Dev Server | [http://localhost:5173](http://localhost:5173) |
+| Mailpit         | [http://localhost:8025](http://localhost:8025) |
+
+---
+
+# 🛑 Arrêter le projet
+
+```bash
+./vendor/bin/sail down
+```
+
+---
+
+# 🚀 Déploiement
+
+Le projet est compatible avec :
+
+* Render
+* VPS Ubuntu
+* Docker
+* Apache / Nginx
+
+---
+
+# 📸 Aperçu
+
+> Ajoute ici des captures d’écran du site pour impressionner les recruteurs 👇
+
+```markdown
+![Home](./screenshots/home.png)
+![Services](./screenshots/services.png)
+```
+
+---
+
+# 👨‍💻 Auteur
+
+### Richmond Guehi
+
+Développeur Full Stack passionné par :
+
+* Laravel
+* Java
+* Spring Boot
+* Angular
+* DevOps
+* UI/UX
+
+📧 Contact professionnel disponible sur demande.
+
+---
+
+# ⭐ Pourquoi ce projet est intéressant ?
+
+Ce projet démontre :
+
+✅ Maîtrise de Laravel moderne
+✅ Utilisation de Docker en environnement réel
+✅ Intégration frontend propre et responsive
+✅ Déploiement professionnel
+✅ Architecture maintenable
+✅ Capacité à produire un projet client réel
+
+---
+
+# 📌 Commandes Git utiles
+
+```bash
+git add .
+git commit -m "Update project"
+git push origin main
+```
+
+---
+
+# le projet sur mon disque est dans 
+
+\\wsl$\Ubuntu\home\asus
+
+---
+
+```
+```

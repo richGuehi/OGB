@@ -685,11 +685,11 @@
                                     class="w-full h-full object-cover">
                             </div>
                             <h4 class="font-bold text-foreground text-xl mb-1">M. Ouattara Soualiho</h4>
-                            <p class="text-secondary text-sm font-semibold mb-3 uppercase tracking-wider">PDG &
-                                Technicien Bâtiment</p>
-                            <p class="text-sm text-muted-foreground leading-relaxed px-2">Président Directeur Général de
-                                OGB. Il apporte son expertise technique et assure la vision stratégique globale du
-                                groupe.</p>
+                            <p class="text-secondary text-sm font-semibold mb-3 uppercase tracking-wider">PDG</p>
+                            <p class="text-sm text-muted-foreground leading-relaxed px-2">
+                                Président Directeur Général d'OGB. Il définit et assure la vision stratégique globale du
+                                groupe.
+                            </p>
                         </div>
 
                         <div class="flex flex-col items-center text-center group">
@@ -711,14 +711,15 @@
 
                             <div
                                 class="w-32 h-32 rounded-full overflow-hidden bg-primary/10 border-4 border-secondary/20 mb-4 group-hover:border-secondary group-hover:scale-105 transition-all duration-300">
-                                <img src="equipe/Kouassi_Dominique.png" alt="M. Kouassi Dominique"
+                                <img src="equipe/Kouassi_Dominique.png" alt="Mme Kouassi Dominique"
                                     class="w-full h-full object-cover">
                             </div>
-                            <h4 class="font-bold text-foreground text-xl mb-1">M. Kouassi Dominique</h4>
+                            <h4 class="font-bold text-foreground text-xl mb-1">Mme Kouassi Dominique</h4>
                             <p class="text-secondary text-sm font-semibold mb-3 uppercase tracking-wider">Secrétaire &
                                 Relations</p>
-                            <p class="text-sm text-muted-foreground leading-relaxed px-2">Secrétaire de l'entreprise, il
-                                est également chargé de la gestion du carnet d'adresses et des relations publiques.</p>
+                            <p class="text-sm text-muted-foreground leading-relaxed px-2">Secrétaire de l'entreprise,
+                                elle
+                                est également chargée de la gestion du carnet d'adresses et des relations publiques.</p>
                         </div>
 
                         <div class="flex flex-col items-center text-center group lg:col-start-2 lg:-ml-1/2">
@@ -769,7 +770,7 @@
                     <a href="mailto:info@ouatge.com"
                         class="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded font-semibold text-sm hover:bg-primary/90 transition-colors">
                         <i data-lucide="mail" class="w-4 h-4"></i>
-                        [EMAIL_ADDRESS]
+                        info@ouatge.com
                     </a>
                     <a href="tel:+2250757833960"
                         class="inline-flex items-center gap-2 border-2 border-primary/20 text-primary px-6 py-3 rounded font-semibold text-sm hover:bg-primary/10 transition-colors">
@@ -933,8 +934,15 @@
         <div class="border-t border-white/5">
             <div
                 class="max-w-[1440px] mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
+                <!-- <p class="text-xs text-primary-foreground/30">
+                    &copy; {{ date('Y') }} OUAT Group Business (OGB). Tous droits réservés. Conçu par richmond Guehi
+                </p> -->
                 <p class="text-xs text-primary-foreground/30">
-                    &copy; {{ date('Y') }} OUAT Group Business (OGB). Tous droits réservés.
+                    &copy; {{ date('Y') }} OUAT Group Business (OGB). Tous droits réservés. Conçu par
+                    <a href="https://portfolio.riche-guehi.com/" target="_blank" rel="noopener noreferrer"
+                        class="font-medium text-[oklch(0.72_0.14_80)] hover:brightness-125 hover:underline transition-all duration-300">
+                        Richmond Guehi
+                    </a>
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#"
